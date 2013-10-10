@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contract History</title>
+		<link type="text/css" rel="stylesheet" href="css/mystyle.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Contract History</h1>
+			<div class="tool-bar">
+				<ul class="sort-by-list">
+					<li><label><input type="radio" name="sort_by" value="1" />Sort by Name</label></li>
+					<li><label><input type="radio" name="sort_by" value="2" />Sort Status</label></li>
+					<li><label><input type="radio" name="sort_by" value="3" />Sort by Date</label></li>
+				</ul>
+			</div>
+			<div class="contract-container">
+				<ul class="contract-header contract-row">
+					<li><p>Name</p></li>
+					<li><p>Status</p></li>
+					<li><p>Type</p></li>
+					<li><p>Date Created</p></li>
+				</ul>
+				<ul class="contract-list">
+					<li class="contract">
+						<ul class="contract-row">
+							<li>
+								<img class="project-photo" src="img/Lighthouse.jpg">
+								<p class="project-name">Paper Walls</p>
+							</li>
+							<li><p class="contract-status confirmed">Confirmed</p></li>
+							<li><p class="contract-type">Equity</p></li>
+							<li><p class="contract-created" data-created="2013-10-10">October 10 2013</p></li>
+						</ul>
+					</li>
+					<li class="contract">
+						<ul class="contract-row">
+							<li>
+								<img class="project-photo" src="img/koala.png">
+								<p class="project-name">Ball and Stick</p>
+							</li>
+							<li><p class="contract-status confirmed">Confirmed</p></li>
+							<li><p class="contract-type">Equity</p></li>
+							<li><p class="contract-created" data-created="2011-08-06">August 06 2011</p></li>
+						</ul>
+					</li>
+					<li class="contract">
+						<ul class="contract-row">
+							<li>
+								<img class="project-photo" src="img/Hydrangeas.jpg">
+								<p class="project-name">Find My Song</p>
+							</li>
+							<li><p class="contract-status unconfirmed">Unconfirmed</p></li>
+							<li><p class="contract-type">Equity</p></li>
+							<li><p class="contract-created" data-created="2012-05-25">May 25 2012</p></li>
+						</ul>
+					</li>
+					<li class="contract">
+						<ul class="contract-row">
+							<li>
+								<img class="project-photo" src="img/flower.png">
+								<p class="project-name">Well Be Fine</p>
+							</li>
+							<li><p class="contract-status unconfirmed">Unconfirmed</p></li>
+							<li><p class="contract-type">Equity</p></li>
+							<li><p class="contract-created" data-created="2012-11-29">November 29 2012</p></li>
+						</ul>
+					</li>
+					<li class="contract">
+						<ul class="contract-row">
+							<li>
+								<img class="project-photo" src="img/Penguins.jpg">
+								<p class="project-name">Hao's Project</p>
+							</li>
+							<li><p class="contract-status confirmed">Confirmed</p></li>
+							<li><p class="contract-type">Equity</p></li>
+							<li><p class="contract-created" data-created="2013-03-13">March 13 2013</p></li>
+						</ul>
+					</li>
+				</ul>
+			</div>			
+		</div>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/sort.js"></script>
+	</body>
+</html>

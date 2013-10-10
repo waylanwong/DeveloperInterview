@@ -1,0 +1,18 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+body{font-family:'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif}
+.container{width:940px;margin:auto}
+ul,li{list-style-type:none;margin:0px;padding:0px}
+.tool-bar{height:50px}.tool-bar .sort-by-list{float:right}.tool-bar .sort-by-list li{float:left;display:inline-block;margin-left:10px}
+.tool-bar .sort-by-list:after{content:"";clear:both}
+.contract-row{margin-bottom:10px;height:60px}.contract-row:after{content:"";clear:both}
+.contract-row li{float:left;width:140px;margin-right:20px}.contract-row li:first-of-type{width:460px}
+.contract-row li:last-of-type{margin-right:0px}
+.contract-row li p{margin:0px;line-height:60px;font-size:16px;color:#333333}
+.contract-header{border-bottom:solid 2px #38a6f8}
+.contract:hover{opacity:0.7;cursor:pointer}
+.contract:nth-of-type(2n){background-color:#90D0DE}
+.contract:nth-of-type(2n+1){background-color:#A5E381}
+.project-photo{width:60px;height:60px}
+.project-name{display:inline-block;font-size:18px !important;vertical-align:top}
+.contract-status{padding-left:25px;margin-left:-25px !important;background-repeat:no-repeat;background-position:left}.contract-status.confirmed{background-image:url('../img/confirmed.png')}
+.contract-status.unconfirmed{background-image:url('../img/unconfirmed.png')}

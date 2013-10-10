@@ -1,0 +1,97 @@
+@base_font_family:          ~"'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif";
+@page_width:                940px;
+@large_column_width:        460px;
+@column_width:              140px;
+@column_margin:             20px;
+body{
+    font-family:            @base_font_family;
+}
+.container{
+    width:                  @page_width;
+    margin:                 auto;            
+}
+ul, li{
+        list-style-type:    none;
+        margin:             0px;
+        padding:            0px;
+}
+//sort by tool bar
+.tool-bar{
+    height:                     50px;
+    .sort-by-list{
+        float:                  right;
+        li{
+            float:              left;
+            display:            inline-block;
+            margin-left:        10px;
+        }
+        &:after{
+            content:                "";
+            clear:                  both;
+        }
+    }
+}
+//contract list
+.contract-row{
+    margin-bottom:                  10px;
+    height:                         60px;
+    &:after{
+        content:            "";
+        clear:              both;
+    }
+    li{
+        float:                      left;
+        width:                      @column_width;
+        margin-right:               @column_margin;
+        &:first-of-type{
+            width:                  @large_column_width;
+        }
+        &:last-of-type{
+            margin-right:           0px;
+        }
+        p{
+            margin:                 0px;
+            line-height:            60px;
+            font-size:              16px;
+            color:                  #333333;
+        }
+    }
+}
+.contract-header{
+    border-bottom:          solid 2px #38a6f8; 
+}
+.contract{
+    &:hover{
+        opacity:            0.7;
+        cursor:             pointer;
+    }
+    &:nth-of-type(2n){
+        background-color:   #90D0DE;
+    }
+    &:nth-of-type(2n+1){
+        background-color:   #A5E381;
+    }
+}
+.project-photo{
+    width:                  60px;
+    height:                 60px;
+}
+.project-name{
+    display:                inline-block;
+    font-size:              18px !important;
+    vertical-align:         top;
+}
+.contract-status{
+    padding-left:           25px;
+    margin-left:            -25px !important;
+    background-repeat:      no-repeat;
+    background-position:    left;
+    &.confirmed{
+        background-image:       url('../img/confirmed.png');
+    }
+    &.unconfirmed{
+        background-image:       url('../img/unconfirmed.png');
+    }
+}
+
+
