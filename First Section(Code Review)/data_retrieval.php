@@ -1,6 +1,6 @@
 <?php
 	//Option 1
-	function getUnreadedMessageNum_1($link, $userid){
+	function getUnreadMessageNum_1($link, $userid){
 		$sql = "SELECT * 
 				FROM Message
 				WHERE Message.readFlag = 0 AND Message.ownerid = $userid";
@@ -13,7 +13,7 @@
 	}
 	
 	//Option 2
-	function getUnreadedMessageNum_2($link, $userid){
+	function getUnreadMessageNum_2($link, $userid){
 		$sql = "SELECT COUNT(Message.id)
 				FROM Message
 				WHERE Message.readFlag = 0 AND Message.ownerid = $userid";
