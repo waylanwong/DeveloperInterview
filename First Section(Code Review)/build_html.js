@@ -20,55 +20,27 @@ function build_html_2(dom_obj){
 }
 
 
-
-
-// Anonymouse vs Named functions and redundant code
-
 $(document).ready(function(){
 	
-	$('#btn_1').click(function(){
-		
-		li data-id="1" class="selected">';
-		html_string += '<p class="contract-date">'+ $(this).data('date') +'</p>';
-		html_string += '<div class="contract-status">' + $(this).data('status') + '</div>';
-		html_string += '</li>';	
+	$('#btn_january').click(function(){
+		var html_string = '';
+		html_string += '<li data-id="1" class="selected">';
+		html_string += '<p class="contract-date">January</p>';
+		html_string += '<div class="contract-status">Started</div>';
+		html_string += '</li>';
+		dom_contractlist.append(html_string);	
 	});
 	
-	$('#btn_2').click(function(){
-		
-		li data-id="1" class="selected">';
-		html_string += '<p class="contract-date">'+ $(this).data('date') +'</p>';
-		html_string += '<div class="contract-status">' + $(this).data('status') + '</div>';
+	$('#btn_february').click(function(){
+		var html_string = '';
+		html_string += '<li data-id="1" class="selected">';
+		html_string += '<p class="contract-date">February</p>';
+		html_string += '<div class="contract-status">Started</div>';
 		html_string += '</li>';	
+		dom_contractlist.append(html_string);
 	});
 	
-	var = radio value;
-	
-	if (radio value == 1)
-	li data-id="1" class="selected">';
-	html_string += '<p class="contract-date">December 10 2013</p>';
-	html_string += '<div class="contract-status">Confirmed</div>';
-	html_string += '</li>';
-	
-	le sei function() {};
-	li data-id="1" class="selected">';
-	html_string += '<p class="contract-date">December 10 2013</p>';
-	html_string += '<div class="contract-status">Confirmed</div>';
-	html_string += '</li>';
-	li data-id="1" class="selected">';
-	html_string += '<p class="contract-date">December 10 2013</p>';
-	html_string += '<div class="contract-status">Confirmed</div>';
-	html_string += '</li>';
-	li data-id="1" class="selected">';
-	html_string += '<p class="contract-date">December 10 2013</p>';
-	html_string += '<div class="contract-status">Confirmed</div>';
-	html_string += '</li>';
+	$(document).on('contract_month_selected', function() {
+		
+	});
 });
-
-function appendcontractdata(dateinput) {
-	li data-id="1" class="selected">';
-	html_string += '<p class="contract-date">'+ dateinput.data +'</p>';
-	html_string += '<div class="contract-status">Confirmed</div>';
-	html_string += '</li>';
-}
-}
